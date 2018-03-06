@@ -9,9 +9,13 @@ $(document).ready(function() {
 
     var countingNumber = Math.floor(countTo/countBy);
 
-    for (index = 0; index <= countingNumber; index += 1) {
-      total = index * countBy;
-      emptyArray.push(total);
+    if (isNaN(countingNumber)) {
+      alert("Enter some numbers");
+    } else {
+      for (index = 0; index <= countingNumber; index += 1) {
+        total = index * countBy;
+        emptyArray.push(total);
+      };
     };
   });
 });
