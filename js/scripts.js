@@ -16,6 +16,6 @@ $(document).ready(function() {
   });
 });
 
-// if (index === (countTo % countBy)) {
+// if (index % countTo === 0) {
 //   emptyArray.push(index);
 // }
